@@ -74,6 +74,22 @@ console.log(spl.indexOf("o"));    //indexOf use for finding the index of the fir
 
 console.log(arr2.reverse());    //reverse use for reversing the order of the elements in the array
 
-const student = {
-       
+const teacher = {
+    name: "XYZ",
+    age: 27,
+    course: "CSE"
 }
+console.log(teacher.age)
+console.log(teacher.course)
+console.log(teacher.name)
+const { name: teacherName, age: teacherAge, course: teacherCourse } = teacher;    //destructuring use for extracting values from an object and assigning them to variables
+console.log(teacherName, teacherAge, teacherCourse);
+
+const numbers = [1, 2, 3, 4, 5];
+const newNum = [...numbers];
+console.log(newNum);    //spread operator use for spreading the elements of an array into a new array   
+
+const abc = (...num) => { 
+    console.log(num);    //rest operator use for collecting all the remaining elements into an array
+}
+console.log(abc(10, 15));
