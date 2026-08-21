@@ -92,4 +92,18 @@ console.log(newNum);    //spread operator use for spreading the elements of an a
 const abc = (...num) => { 
     console.log(num);    //rest operator use for collecting all the remaining elements into an array
 }
-console.log(abc(10, 15));
+console.log(abc(10, 15, 45, 76, 89)); //it show undefined because the function does not return anything, it only logs the array to the console
+
+const addition = (a, b) => {        
+    return a + b;
+}
+console.log("Addition: " + add(10, 5));
+
+const subtract = (a,b) => a - b;
+console.log("Subtraction: " + subtract(10, 5));
+
+const multiply = (a,b) => a*b;
+console.log("Multiplication: " + mul(10, 5));
+
+const div = (a,b) => a/b;
+console.log("divide: " + div(10, 5));
