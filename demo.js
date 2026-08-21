@@ -126,3 +126,22 @@ const newStudent = {
 console.log(student.age);   
 
 //what is component in reactjs:-  A component is a block of code that is reusable
+
+//There are two type of copy:- 1. Shallow Copy 2. Deep Copy
+//shallow copy is the copy in which we copy the reference of the object and not the values of the object
+//deep copy is the copy in which we copy the values of the object and not the reference of the object
+const deepcpy = structuredClone(student);    //structuredClone use for creating a deep copy of an object
+
+//The difference between pure and impure function:-
+//Impure function:-  A function is said to be impure if it modifies the state of the program or has side effects.
+//Pure function:-  A function is said to be pure if it does not modify the state of the program or has no side effects.
+
+let ab = 27;
+const addWithAb = (a, b) => {
+    return a + b + ab;    //impure function because it modifies the state of the program by using the variable ab which is defined outside the function
+}
+console.log(addWithAb(23, 45));
+
+let ac = 23;
+let ad = 23;
+console.log(ac === ad); 
